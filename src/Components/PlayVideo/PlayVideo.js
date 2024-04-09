@@ -67,7 +67,7 @@ return (
      <div className="publisher">
        <img src={channelData?channelData.snippet.thumbnails.medium.url:''} alt=""/>
         <div>
-            <h3>{channelData?channelData.snippet.channelTitle:''}</h3>
+            <h3>{apiData?apiData.snippet.channelTitle:''}</h3>
             <span>{channelData?value_converter(channelData.statistics.subscriberCount):"100K"}</span>
         </div>
         <button>Subscribe</button>
